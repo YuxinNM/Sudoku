@@ -1,0 +1,60 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+}
+
+#errors {
+    color:firebrick;
+}
+
+#board {
+    width: 360px;
+    height: 360px;
+
+    background-color: beige;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 36px;
+    height: 36px;
+    border: 1px rgb(13, 2, 53);
+    margin: 1px;
+
+    /*Text */
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#digits {
+    width: 360px;
+    height: 40px;
+
+    /* background-color: beige; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number {
+    width: 36px;
+    height: 36px;
+    border: 1px solid black;
+    margin: 1px;
+
+    /*Text */
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
