@@ -52,6 +52,7 @@ hr {
 .tile:nth-child(n+46):nth-child(-n+54){
     border-bottom: 2px solid #4a5568; 
 }
+
 #digits {
     width: 360px;
     height: 40px;
@@ -78,3 +79,10 @@ hr {
     align-items: center;
 }
 
+.number-selected {
+    background-color: #767a84;
+}
+
+.tile-start {
+    background-color: rgb(230, 230, 232);
+}
