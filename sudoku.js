@@ -3,29 +3,40 @@ var tileSelected = null;
 
 var errors = 0;
 
-var board = [
-    "007491605",
-    "200060309",
-    "000007010",
-    "058600004",
-    "003000090",
-    "006200187",
-    "904070002",
-    "670830000",
-    "810045000"
-]
+const { sudokuGenerator } = require('./boardGenerator.js');
 
-var solution = [
-    "387491625",
-    "241568379",
-    "569327418",
-    "758619234",
-    "123784596",
-    "496253187",
-    "934176852",
-    "675832941",
-    "812945763"
-]
+let k = 20;
+const {board, solution} = sudokuGenerator(k);
+
+const boardAsStrings = board.map(row => row.join(""));
+const solutionAsStrings = solution.map(row => row.join(""));
+
+console.log("Puzzle:\n", boardAsStrings.join("\n"));
+console.log("\nSolution:\n", solutionAsStrings.join("\n"));
+
+// var board = [
+//     "007491605",
+//     "200060309",
+//     "000007010",
+//     "058600004",
+//     "003000090",
+//     "006200187",
+//     "904070002",
+//     "670830000",
+//     "810045000"
+// ]
+
+// var solution = [
+//     "387491625",
+//     "241568379",
+//     "569327418",
+//     "758619234",
+//     "123784596",
+//     "496253187",
+//     "934176852",
+//     "675832941",
+//     "812945763"
+// ]
 
 window.onload = function() {
     setGame();
@@ -49,15 +60,15 @@ function setGame() {
             //<div id = "r-c"></div>
             let tile = document.createElement("div");
             
-            if (board[r][c] != 0) {
-                tile.innerText = board[r][c];
+            if (boardAsStrings[r][c] != 0) {
+                tile.innerText = boardAsStrings[r][c];
                 tile.classList.add("tile-start");
             }
            
             tile.id = r.toString() + "-" + c.toString();
             tile.addEventListener("click", selectTile);
             tile.classList.add("tile");
-            document.getElementById("board").append(tile);
+            document.getElementById("boardAsStrings").append(tile);
         }
     }
 }
@@ -81,7 +92,7 @@ function selectTile() {
         let r = parseInt(coords[0]);
         let c = parseInt(coords[1]);
 
-        if (solution[r][c] == numSelected.id) {
+        if (solutionAsStrings[r][c] == numSelected.id) {
             this.innerText = numSelected.id;
         } else {
             errors += 1;
