@@ -32,12 +32,12 @@ function fillBox(grid, row, col) {
 // Check if it's safe to put num in row i
 // Ensure num is not already used in the row
 function unUsedInRow(grid, i, num) {
-    for (let j = 0; j < 9; j++) {
-        if (grid[i][j] === num) {
-            return false;
-        }
-    }
-    return true;
+    // for (let j = 0; j < 9; j++) {
+    //     if (grid[i][j] === num) {
+    //         return false;
+    //     }
+    // }
+    return !grid[i].includes(num);
 }
 
 // Check if it's safe to put num in column j
@@ -63,7 +63,6 @@ function checkIfSafe(grid, i, j, num) {
 function fillDiagonal(grid) {
     
     for (let i = 0; i < 9; i += 3) {
-        
         // Fill each 3x3 subgrid diagonally
         fillBox(grid, i, i);
     }
@@ -128,7 +127,7 @@ function removeKDigits(grid, k) {
 }
 
 // Generate a Sudoku grid with K empty cells
-function sudokuGenerator(k) {
+export function sudokuGenerator(k) {
     
     // Initialize an empty 9x9 grid
     let grid = new Array(9).fill(0).map(() => new Array(9).fill(0));
@@ -148,6 +147,6 @@ function sudokuGenerator(k) {
     return { board, solution };
 }
 
-module.exports = { sudokuGenerator };
+
 
 

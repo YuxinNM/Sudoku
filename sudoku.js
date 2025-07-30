@@ -3,7 +3,7 @@ var tileSelected = null;
 
 var errors = 0;
 
-const { sudokuGenerator } = require('./boardGenerator.js');
+import { sudokuGenerator } from './boardGenerator.js';
 
 let k = 20;
 const {board, solution} = sudokuGenerator(k);
@@ -11,8 +11,8 @@ const {board, solution} = sudokuGenerator(k);
 const boardAsStrings = board.map(row => row.join(""));
 const solutionAsStrings = solution.map(row => row.join(""));
 
-console.log("Puzzle:\n", boardAsStrings.join("\n"));
-console.log("\nSolution:\n", solutionAsStrings.join("\n"));
+// console.log("Puzzle:\n", boardAsStrings.join("\n"));
+// console.log("\nSolution:\n", solutionAsStrings.join("\n"));
 
 // var board = [
 //     "007491605",
@@ -68,7 +68,7 @@ function setGame() {
             tile.id = r.toString() + "-" + c.toString();
             tile.addEventListener("click", selectTile);
             tile.classList.add("tile");
-            document.getElementById("boardAsStrings").append(tile);
+            document.getElementById("board").append(tile);
         }
     }
 }
