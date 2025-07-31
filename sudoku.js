@@ -5,14 +5,11 @@ var errors = 0;
 
 import { sudokuGenerator } from './boardGenerator.js';
 
-let k = 20;
+let k = 25;
 const {board, solution} = sudokuGenerator(k);
 
 const boardAsStrings = board.map(row => row.join(""));
 const solutionAsStrings = solution.map(row => row.join(""));
-
-// console.log("Puzzle:\n", boardAsStrings.join("\n"));
-// console.log("\nSolution:\n", solutionAsStrings.join("\n"));
 
 // var board = [
 //     "007491605",
