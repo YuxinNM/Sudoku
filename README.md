@@ -16,12 +16,8 @@ An interactive and visually appealing **Sudoku game** built with **JavaScript**,
 
 ## 📸 Screenshots
 
-> *![GUI](image.png)*
-> *![GUI With Errors Updated](image-1.png)*
-
-## 📸 Demo
-
-[▶️ Click here to play the game live](https://yuxinnm.github.io/Sudoku/)
+> *![GUI](image-3.png)*
+> *![GUI With Errors Updated](image-2.png)*
 
 ---
 
@@ -35,12 +31,10 @@ An interactive and visually appealing **Sudoku game** built with **JavaScript**,
 ---
 
 ## 🚀 Getting Started
-### click the link below to play the game live
-```bash
-https://yuxinnm.github.io/Sudoku/
-```
 
----
+[▶️ Click here to play the game live](https://yuxinnm.github.io/Sudoku/)
+
+## Or
 
 ### 1. Clone the repository
 
