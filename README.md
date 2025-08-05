@@ -18,19 +18,26 @@ An interactive and visually appealing **Sudoku game** built with **JavaScript**,
 
 > *![GUI](image.png)*
 
-Or [click here to play the game live](#) *(add a live GitHub Pages or Vercel/Netlify link if deployed)*
+Or [click here to play the game live](#) *(https://yuxinnm.github.io/Sudoku/)*
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **HTML5** – Semantic structure
-- **CSS3** – Styling and responsive layout
-- **JavaScript (ES6+)** – Game logic and DOM interaction
-
+- **HTML5** – Page structure and layout
+- **CSS3** – Styling and responsive visuals
+- **JavaScript (ES6+)** – Game logic and user interaction
+- **Git & GitHub** – Version control and hosting
+- **GitHub Pages** – Deployment and live preview
 ---
 
 ## 🚀 Getting Started
+### click the link below to play the game live
+```bash
+https://yuxinnm.github.io/Sudoku/
+```
+
+---
 
 ### 1. Clone the repository
 
@@ -55,17 +62,18 @@ start index.html
 
 ---
 
+
+
 ## 📂 Project Structure
 
 ```
 Sudoku/
 ├── css/
-│   └── style.css         # Styles for the board and UI
+│   └── style.css                  # Styles for the board and UI
 ├── js/
-│   ├── board.js          # Puzzle generation logic
-│   ├── inputHandler.js   # Keyboard and mouse input logic
-│   └── main.js           # Entry point, rendering, and game flow
-├── index.html            # Main HTML file
+│   ├── boardGenerator.js          # Puzzle generation logic
+│   └── sudoku.js                  # Keyboard and mouse input logic
+├── index.html                     # Main HTML file
 └── README.md
 ```
 
@@ -73,9 +81,9 @@ Sudoku/
 
 ## 🎯 How to Play
 
-- Click a cell to select it.
-- Use number keys (1–9) to enter a value.
-- Use **Backspace** or **Delete** to clear a cell.
+- Click a tile (1-9) at the bottom of the screen to select it.
+- Click an empty cell on the board to enter the value selected.
+- The error message at the top of the screen will update accordingly.
 - Refresh the page to generate a new puzzle.
 
 ---
@@ -85,8 +93,6 @@ Sudoku/
 - Difficulty selector (Easy, Medium, Hard)
 - Puzzle solver and hint system
 - Timer and high score tracking
-- Mobile responsiveness
-- Dark mode toggle
 
 ---
 
