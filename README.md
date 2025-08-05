@@ -18,7 +18,7 @@ An interactive and visually appealing **Sudoku game** built with **JavaScript**,
 
 > *![GUI](image.png)*
 
-Or [click here to play the game live](#) *(https://yuxinnm.github.io/Sudoku/)*
+Or [click here to play the game live](#https://yuxinnm.github.io/Sudoku/)
 
 ---
 
