@@ -1,5 +1,6 @@
 // JavaScript program to generate a valid sudoku 
 // with k empty cells
+// Citation: https://www.geeksforgeeks.org/dsa/program-sudoku-generator/
 
 // Returns false if given 3x3 block contains num
 // Ensure the number is not used in the box
