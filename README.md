@@ -14,11 +14,14 @@ An interactive and visually appealing **Sudoku game** built with **JavaScript**,
 
 ---
 
-## 📸 Demo & Screenshots
+## 📸 Screenshots
 
 > *![GUI](image.png)*
+> *![GUI With Errors Updated](image-1.png)*
 
-Or [click here to play the game live](#https://yuxinnm.github.io/Sudoku/)
+## 📸 Demo
+
+[▶️ Click here to play the game live](https://yuxinnm.github.io/Sudoku/)
 
 ---
 
